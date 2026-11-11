@@ -1,46 +1,63 @@
 # 🔊 Lista de Efectos de Sonido (SFX) - Notaría de Aventureros
 
 > [!TIP]
-> **Responsable:** Michael *(Audio & SFX)*.
-> Estilo: Foley tangible de oficina arcaica (madera, papel grueso, metal) y murmullos vocales modulados.
+> **Responsable:** Michael *(Audio, Foley & SFX)*.
+> Estilo: Foley tangible de oficina arcaica, mecanismos ópticos, tensión burocrática y feedback auditivo diegético de moralidad.
 
 ---
 
-## 📜 Foley de Oficina y Mesa de Trabajo
+## ⚡ Resoluciones de Trámite (Acciones Clave)
 
 | ID / Archivo | Acción / Evento | Descripción Sonora | Prioridad | Estado |
 | :--- | :--- | :--- | :---: | :---: |
-| `sfx_sello_impacto` | Estampar sello en documento | Golpe pesado de madera maciza con rebote seco de tinta | **Crítica** | 🔴 Pendiente |
-| `sfx_pluma_escritura` | Cambiar opción en declaración | Rasgueo rápido y crujiente de pluma sobre pergamino | Alta | 🔴 Pendiente |
-| `sfx_pagina_voltear` | Abrir / pasar hoja de reglas | Desplazamiento de hoja de papel grueso / pergamino | Alta | 🔴 Pendiente |
-| `sfx_monedas_tintineo` | Cobro de soborno o pago final | Tintineo metálico de monedas de cobre y oro chocando | Alta | 🔴 Pendiente |
-| `sfx_multa_sirena` | Error detectado / sanción real | Golpe de gong o sello metálico pesado de advertencia | Alta | 🔴 Pendiente |
+| `sfx_accion_cobrar` | Trámite legal ordinario | Estampe de sello oficial en recibo y tintineo moderado de monedas | **Crítica** | 🔴 Pendiente |
+| `sfx_accion_arrestar` | Llamar a los guardias | Silbato agudo de aduana, pisadas pesadas de hierro y golpe de grilletes | **Crítica** | 🔴 Pendiente |
+| `sfx_accion_confiscar` | Incautación para la Corona | Golpe sordo de candado de cofre metálico y timbre de cera real | Alta | 🔴 Pendiente |
+| `sfx_accion_robar` | Ocultar botín bajo la mesa | Deslizamiento sigiloso sobre madera, chasquido de cajón secreto falso | **Crítica** | 🔴 Pendiente |
 
 ---
 
-## 🔮 Herramientas Mágicas e Ítems
+## 🎭 Retroalimentación Inmediata de Honor
+
+> [!IMPORTANT]
+> Se reproduce **en el instante exacto** en que se confirma la resolución del trámite, sincronizado con la viñeta visual en pantalla.
+
+| ID / Archivo | Condición de Honor | Descripción Sonora | Prioridad | Estado |
+| :--- | :--- | :--- | :---: | :---: |
+| `sfx_honor_positivo` | Honor Positivo (Acción justa/legal) | Acorde musical limpio, consonante y brillante (guitarra bien afinada / campana suave) | **Crítica** | 🔴 Pendiente |
+| `sfx_honor_negativo` | Honor Negativo (Robo / Injusticia) | Tono grave, disonante y tenso (cuerda destensada raspada o golpe apagado en registro menor) | **Crítica** | 🔴 Pendiente |
+
+---
+
+## 🔍 El Lente y Herramientas de Inspección
 
 | ID / Archivo | Acción / Evento | Descripción Sonora | Prioridad | Estado |
 | :--- | :--- | :--- | :---: | :---: |
-| `sfx_lente_hum` | Arrastrar lente sobre objeto | Zumbido místico sutil / brillo de cristal mágico | Alta | 🔴 Pendiente |
-| `sfx_bolsa_abrir` | Guardia abre bolsa de despacho | Crujido de cuero y solapas de tela | Media | 🔴 Pendiente |
-| `sfx_item_colocar` | Soltar objeto en el cuenco | Sonido metálico hueco al caer en la bandeja con patas | Media | 🔴 Pendiente |
+| `sfx_lente_drag` | Mover la lupa en la mesa | Roce suave de vidrio y montura de bronce sobre madera | Alta | 🔴 Pendiente |
+| `sfx_switch_magico` | Activar Espectro Mágico | Resonancia cristalina sutil / zumbido etéreo envolvente | Alta | 🔴 Pendiente |
+| `sfx_switch_biologico`| Activar Espectro Biológico | Clic de obturador y gorgoteo orgánico casi imperceptible | Alta | 🔴 Pendiente |
+| `sfx_switch_rayosx` | Activar Espectro Rayos X | Clic mecánico seco de diafragma metálico y chasquido de lente | Alta | 🔴 Pendiente |
+| `sfx_option_select` | Cambiar desplegable (Formulario) | Rasgueo rápido y seco de pluma escribiendo tinta | Media | 🔴 Pendiente |
+| `sfx_libro_pasar_hoja`| Consultar Libro de Reglas | Crujido pesado de papel de pergamino antiguo | Alta | 🔴 Pendiente |
 
 ---
 
-## 🐱 Diálogos Vocales ("Estilo Animal Crossing")
+## 🌙 Pantalla de Fin de Día y Economía
 
-| ID / Archivo | Personaje | Tipo de Sonido | Prioridad | Estado |
+| ID / Archivo | Evento | Descripción Sonora | Prioridad | Estado |
 | :--- | :--- | :--- | :---: | :---: |
-| `vox_guardia_gato` | Guardia de la aduana | Murmullos guturales graves modulados con pausas breves | Alta | 🔴 Pendiente |
-| `vox_aventurero_humano` | Aventureros comunes | Murmullos en tono medio con inflexión de duda o súplica | Media | 🔴 Pendiente |
-| `vox_aventurero_agudo` | Elfos / Goblins | Tonos agudos y rápidos estilo parloteo cómico | Media | 🔴 Pendiente |
+| `sfx_conteo_oro` | Suma de ingresos nocturnos | Monedas cayendo secuencialmente sobre un paño de terciopelo | Alta | 🔴 Pendiente |
+| `sfx_soborno_gato` | Pago forzoso de soborno | Ronroneo bajo y socarrón del guardia gato recibiendo su tajada | Alta | 🔴 Pendiente |
+| `sfx_carta_familiar` | Lectura de notas de los hijos | Despliegue suave de pliegue de carta | Media | 🔴 Pendiente |
+| `sfx_bancarrota_muerte`| Dinero $\le 0$ (Game Over) | Viento gélido silbando y golpe fúnebre sordo | Alta | 🔴 Pendiente |
 
 ---
 
-## 🖱️ Interfaz de Usuario (UI)
+## 🐱 Diálogos Vocales Modulados (Estilo *Animal Crossing*)
 
-| ID / Archivo | Acción | Descripción | Prioridad | Estado |
+| ID / Archivo | Personaje | Tipo de Modulación | Prioridad | Estado |
 | :--- | :--- | :--- | :---: | :---: |
-| `sfx_ui_click` | Presionar botón / pestaña | Click suave de madera | Media | 🔴 Pendiente |
-| `sfx_ui_hover` | Pasar cursor sobre interactuable | Susurro sutil de papel | Baja | 🔴 Pendiente |
+| `vox_guardia_gato` | Guardia de la aduana | Gruñidos y murmullos guturales graves con pausas de sospecha | Alta | 🔴 Pendiente |
+| `vox_guardia_complice` | Guardia gato al presenciar robo | Maullido bajo modulado con risa entre dientes | Media | 🔴 Pendiente |
+| `vox_aventurero_plebeyo`| Aventureros estándar | Murmullos en tono medio con inflexión de súplica o cansancio | Media | 🔴 Pendiente |
+| `vox_aventurero_noble` | Elfos, magas o mercaderes | Parloteo rápido y altivo en tono agudo | Media | 🔴 Pendiente |

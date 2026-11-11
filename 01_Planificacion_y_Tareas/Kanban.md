@@ -6,29 +6,32 @@ kanban-plugin: board
 
 ## 💡 Backlog / Ideas
 
-- [ ] Voces procesadas con murmullos tipo Animal Crossing #audio
-- [ ] Partículas mágicas al pasar la lente rúnica sobre objetos #arte
-- [ ] Más tipos de clientes aventureros (enanos, orcos comerciantes) #arte
-- [ ] Efecto de pantalla temblorosa (shake) al estampar sellos #dev
+- [ ] Efecto de distorsión de lente cóncava al arrastrar la lupa #arte
+- [ ] Partículas arcanas y humo verde al activar los filtros de El Lente #arte
+- [ ] Animación de temblor de pantalla (screen shake) al presionar Arrestar o Confiscar #dev
+- [ ] Cartas manuscritas adicionales de la familia con ilustraciones sencillas #arte
 
 
-## ⏳ To Do (Prioridad Jam)
+## ⏳ To Do (Prioridad Jam - Nuevo Core)
 
-- [ ] **Lucas:** Diseñar sprite del guardia gato con armadura (idle y hablar) #arte
-- [ ] **Lucas:** Diseñar props de la mesa (cuenco con patas mecánicas, bolsa de cuero, sellos) #arte
-- [ ] **Michael:** Componer arreglo en guitarra de *Gnossienne No. 1* (loop de gameplay) #audio
-- [ ] **Michael:** Grabar / diseñar SFX de impacto de sello de madera y rasgueo de pluma #audio
-- [ ] **Daniel / Esther:** Programar sistema de Drag & Drop para la Lente Rúnica y los Sellos #dev
-- [ ] **Daniel / Esther:** Crear escena `Declaration_Form.tscn` con menús `OptionButton` #dev
-- [ ] **Michael / Daniel:** Crear base de datos de objetos (`ItemsDatabase.gd`) con atributos visibles y ocultos #dev
-- [ ] **Equipo:** Conectar lógica de validación booleana (Declaración vs Libro de Reglas) #dev
+- [ ] **Daniel:** Programar `Tool_Lens.tscn` con drag & drop y conmutación de los 3 filtros de Shader (Mágico, Biológico, Rayos X) #dev
+- [ ] **Esther:** Crear `Universal_Form.tscn` con 3 `OptionButton` (Material, Estado, Propósito) para coartadas burocráticas #dev
+- [ ] **Esther:** Implementar `DailyRulesDatabase.gd` con normativas y prohibiciones de los Días 1 al 5 #dev
+- [ ] **Michael:** Implementar máquina de estados en `GameManager.gd` para la campaña de 5 días (8-10 objetos/día) #dev
+- [ ] **Michael:** Programar sistema de Honor oculto (-100 a +100) y disparador de viñetas (blanca/roja) #dev
+- [ ] **Michael:** Crear pantalla de Resumen Nocturno con gastos familiares y Soborno creciente al Guardia Gato #dev
+- [ ] **Michael:** Diseñar audio de moralidad (acorde limpio vs tono disonante) y SFX de las 4 acciones #audio
+- [ ] **Lucas:** Diseñar sprite del Guardia Gato con armadura y su pose cómplice/guiño al robar #arte
+- [ ] **Lucas:** Ilustrar El Lente, Formulario Universal, Libro de Reglas y botones de resolución #arte
+- [ ] **Lucas / Equipo:** Diseñar e integrar el catálogo de 40-50 objetos (incluyendo Libro de Alquimia y de Carpintería) #arte
+- [ ] **Daniel / Esther / Michael:** Programar evaluador de los 4 Finales y pantalla de Game Over por inanición #dev
 
 
 ## 🚀 In Progress
 
-- [ ] **Lucas:** Sprite sheet de la protagonista burócrata (catgirl estresada) #arte
-- [ ] **Michael:** Definición de arquitectura de escenas y flujo de turnos en Godot 4 #dev
-- [ ] **Equipo:** Prototipado de la escena principal `Desk_View.tscn` #dev
+- [ ] **Michael:** Arreglo musical de *Gnossienne No. 1* y buses de audio con Low-Pass #audio
+- [ ] **Lucas:** Arte pixel art de la mesa de aduanas (`bg_mesa_aduana`) y props #arte
+- [ ] **Equipo:** Prototipado y ensamble de la escena principal `Desk_View.tscn` #dev
 
 
 ## 📦 Requisitos de Entrega & Reglamento
@@ -36,24 +39,24 @@ kanban-plugin: board
 - [ ] Completar formularios individuales de inscripción (Michael, Lucas, Daniel, Esther) #admin
 - [ ] Redactar controles, créditos e instrucciones de ejecución #admin
 - [ ] Completar tabla de declaración de assets de terceros y uso de IA #reglamento
-- [ ] Grabar video corto de demostración (gameplay para la organización) #marketing
+- [ ] Grabar video corto de demostración (gameplay de 30 a 60 segundos) #marketing
 - [ ] Preparar export para Windows `.exe` y verificar en máquina limpia #dev
 - [ ] Coordinar asistencia presencial para la exhibición del 21 de noviembre de 2026 #admin
 
 
-## 🧪 Testing & Bugfix
+## 🧪 Testing & Balance
 
-- [ ] Comprobar que no haya errores lógicos que bloqueen el avance entre días #dev
-- [ ] Ajustar balance de dinero (que las multas no causen quiebra inmediata en Día 1 y 2) #design
+- [ ] Probar curva de dificultad económica: evitar quiebras accidentales en Día 1 o 2 #design
+- [ ] Verificar que los 4 finales se desbloqueen con precisión según dinero, honor y posesión de los dos libros clave #dev
+- [ ] Comprobar que los 3 filtros de El Lente revelen con claridad las propiedades sin ambigüedad textual #design
 
 
 ## ✅ Done
 
 - [ ] Creación de la estructura de la bóveda de Obsidian
-- [ ] Actualización con el reglamento oficial de GUILD Game Jam 2026
-- [ ] GDD completo de *Notaría de Aventureros* (High Concept, Core Loop, Días 1-4)
-- [ ] Mockup visual de la mesa de aduanas integrado en `03_Arte_y_UI`
-- [ ] Flujo de Git documentado con diagrama y nota dedicada
+- [ ] Registro del reglamento oficial de GUILD Game Jam 2026
+- [ ] Actualización integral de la bóveda con el nuevo GDD (5 días, 4 resoluciones, El Lente con 3 filtros, Honor y 4 Finales)
+- [ ] Flujo de Git y convenciones de arquitectura modular documentadas
 
 
 

@@ -1,56 +1,101 @@
-# 🗺️ Estructura de Días y Progresión - Notaría de Aventureros
+# 🗺️ Progresión de Jornadas (5 Días) y Finales - Notaría de Aventureros
 
-> [!NOTE] **Formato de Jornadas Laborales**
-> En lugar de niveles espaciales de scroll, la progresión se organiza por **Días Laborales** (Turnos de 3 a 5 aventureros por día) con reglas acumulativas y crecientes.
+> [!NOTE] **Estructura y Ritmo de la Campaña**
+> La partida transcurre a lo largo de **5 Jornadas Laborales**. Cada jornada dura entre **2 y 3 minutos en tiempo real**, procesando de **8 a 10 objetos** por día (estimado total: **40 a 50 objetos** a lo largo de toda la partida).
 
 ---
 
-## 📈 Curva de Dificultad (4 Días de Jornada)
+## 📈 Curva de Dificultad y Progresión Mecánica
 
 ```mermaid
 flowchart LR
-    D1["Día 1: Inducción<br>Solo sellos y reglas simples"] --> D2["Día 2: Inspección Oculta<br>Desbloqueo de Lente Rúnica"]
-    D2 --> D3["Día 3: El Arte del Vacío Legal<br>Declaración Jurada y desplegables"]
-    D3 --> D4["Día 4: La Gran Auditoría<br>Reglas contradictorias y alta presión"]
+    D1["Día 1: Básico<br>• Acciones: Cobrar y Arrestar<br>• Leyes evidentes"] --> D2["Día 2: El Lente<br>• 3 Filtros (Magia, Bio, Rayos X)<br>• Prohibición de magia y armas"]
+    D2 --> D3["Día 3: Confiscar & Robar<br>• Leyes de incautación<br>• Objeto clave: Libro de Alquimia<br>• Resumen: Nota de la Hija"]
+    D3 --> D4["Día 4: Formulario & Coartadas<br>• Casos trampa de alto riesgo<br>• Objeto clave: Libro de Carpintería<br>• Resumen: Hijo gasta dinero en madera"]
+    D4 --> D5["Día 5: La Gran Auditoría<br>• Clímax burocrático<br>• Evaluación de los 4 Finales"]
 ```
 
 ---
 
-## 📅 Desglose de Jornadas
+## 📅 Desglose de las 5 Jornadas
 
-### 🌅 Día 1: "Bienvenido a la Aduana"
-- **Objetivo pedagógico:** Aprender el arrastre de sellos y la lectura básica del Libro de Reglas.
-- **Herramientas disponibles:** Sellos de madera (`Aprobado`, `Denegado`), Libro de Reglas básico.
-- **Clientes (3 casos):**
-  1. *Aventurero con escudo común:* Pasa sin problemas.
-  2. *Guerrero con hacha gigante que excede el peso permitido:* Requiere sello de rechazo.
-  3. *Mago novato con pergamino exento de tasas:* Aprobación directa.
-- **Riesgo:** Multas mínimas para permitir aclimatarse al UI.
-
----
-
-### 🔍 Día 2: "Lo que el Ojo no ve"
-- **Objetivo pedagógico:** Introducir la herramienta de inspección interactiva.
-- **Nueva herramienta:** **Lente Rúnica**.
-- **Mecánica:** Al arrastrar la lente sobre los objetos del cuenco, se revelan auras invisibles (fuego, veneno, maldición).
-- **Clientes (4 casos):**
-  - Espada aparentemente normal que bajo la lente revela una runa flamígera prohibida.
-  - Frasco de "medicina" que bajo la lente resulta ser veneno de basilisco.
-  - Amuleto que reacciona a magia sagrada permitida.
+### 🌅 Día 1: "El Primer Turno en la Aduana"
+- **Duración / Volumen:** ~2-3 minutos | 8-10 clientes y objetos.
+- **Mecánicas Desbloqueadas:** 
+  - Acciones activas: `💰 Cobrar` y `⛓️ Arrestar`.
+- **Leyes del Libro de Reglas:**
+  - Objetos comunes pagan arancel básico legal.
+  - Contrabando bélico manifiesto (ej. hachas de guerra gigantes sin licencia) exige arresto inmediato.
+- **Objetivo Pedagógico:**
+  - Familiarizarse con el flujo de inspección en mesa, la lectura del Libro de Reglas y la diferencia entre cobrar (sueldo base) y arrestar (comisión por captura vs. pérdida de honor si arrestas a un inocente).
+- **Fin del Día:**
+  - Resumen contable sin sobresaltos. Gastos fijos de subsistencia básica.
 
 ---
 
-### 📜 Día 3: "La Declaración Jurada"
-- **Objetivo pedagógico:** Forzar la reinterpretación lógica para evadir impuestos.
-- **Nueva mecánica:** Formulario interactivo con menús desplegables (`OptionButton`).
-- **Reto:** El aventurero no puede pagar el 80% de arancel de su botín. Debes seleccionar en el formulario una justificación técnica válida según las excepciones del manual (ej. clasificar un *Cráneo Maldito* como *"Material de investigación pedagógica"*).
-- **Clientes (4 casos):** Casos donde el soborno es alto si logras el vacío legal, pero la multa es severa si te equivocas.
+### 🔍 Día 2: "Los Ojos de la Verdad (El Lente)"
+- **Duración / Volumen:** ~2-3 minutos | 8-10 clientes y objetos.
+- **Nueva Herramienta:** 
+  - **El Lente** con sus 3 filtros intercambiables: **Espectro Mágico**, **Biológico** y **Rayos X**.
+- **Leyes del Libro de Reglas:**
+  - La Corona prohíbe severamente la posesión ciudadana de **armas ocultas** y **artefactos imbuidos de magia**. Todo portador debe ser **arrestado en el acto**.
+- **Dinámica de Puzzle:**
+  - Los objetos engañan a simple vista. Una empuñadura parece inofensiva hasta que la examinas bajo Rayos X y revelas una hoja retráctil envenenada; un relicario de plata resplandece con runas prohibidas bajo el Espectro Mágico.
+- **Fin del Día:**
+  - Se incrementan los gastos del hogar. El jugador siente la necesidad de conseguir ingresos adicionales mediante comisiones.
 
 ---
 
-### ⚖️ Día 4: "La Gran Auditoría" (Clímax de la Jam)
-- **Objetivo pedagógico:** Poner a prueba la agilidad mental con normativas contradictorias dictadas por el Rey en su último decreto matutino.
-- **Condiciones especiales:**
-  - El Inspector Real realiza chequeos sorpresa.
-  - Clientes con 2 o más objetos simultáneos que interactúan entre sí.
-- **Final:** Si superas la jornada con fondos suficientes para el alquiler y sobras, desbloqueas el final de "Maestra Notaria de la Resistencia".
+### 📦 Día 3: "La Línea de la Transgresión (Confiscar y Robar)"
+- **Duración / Volumen:** ~2-3 minutos | 8-10 clientes y objetos.
+- **Nuevas Acciones Habilitadas:**
+  - `📦 Confiscar`: Quitar el objeto para las arcas del reino (bono de incautación legal).
+  - `🤫 Robar`: **Mecánica oculta**. El Libro de Reglas no la menciona en absoluto. Te embolsas el botín bajo el escritorio. Baja tu honor e incrementa la sospecha del reino.
+- **Leyes del Libro de Reglas:**
+  - Se especifica qué materias y reliquias antiguas deben ser incautadas para los almacenes de la Corona.
+- **⭐ Evento y Objeto Clave:**
+  - Entre los aventureros aparece un anciano con el **Libro de Alquimia**.
+  - Si el jugador lo confisca o cobra, se pierde para siempre; si lo **roba y decide conservarlo** (no venderlo en el resumen), se guarda en el baúl personal.
+- **Fin del Día (Pantalla de Resumen):**
+  - **Alerta de Soborno:** Si robaste objetos, la cuota de *"Soborno al Guardia Gato"* sube notablemente.
+  - **Pista Narrativa Familiar:** Una nota avisa que **tu hija muestra un apasionado interés por la transmutación de elementos y la alquimia**.
+
+---
+
+### ⚖️ Día 4: "El Vacío Legal (Ingeniería Burocrática)"
+- **Duración / Volumen:** ~2-3 minutos | 8-10 clientes y objetos.
+- **Complejidad Máxima de Formulario:**
+  - Obliga a usar con extrema precisión **El Lente** y el **Formulario Universal** (Material, Estado, Propósito).
+  - Leyes contradictorias: Si dices la verdad sobre ciertos botines de clientes respetables, tendrías que arrestarlos injustamente; mentir creando un vacío legal te permite ayudarlos o justificar transacciones complejas.
+- **⭐ Evento y Objeto Clave:**
+  - Aparece un cliente con un tratado técnico: el **Libro de Carpintería**.
+  - Si lo **robas y decides conservarlo**, activas la segunda mitad del misterio familiar.
+- **Fin del Día (Pantalla de Resumen):**
+  - **Gasto Imprevisto Fuerte:** El resumen avisa que **tu hijo necesita con urgencia un oficio digno**. El muchacho tomó dinero de la caja fuerte familiar y **compró un enorme cargamento de madera común**. Tu liquidez cae en picada; si no tenías suficientes ahorros, puedes rozar la bancarrota.
+
+---
+
+### 👑 Día 5: "La Gran Auditoría y la Resolución"
+- **Duración / Volumen:** ~2-3 minutos | 8-10 clientes y objetos.
+- **Condición de Presión:**
+  - Clímax de dificultad. Clientes con objetos de múltiples espectros (mágico + biológico) y valores incalculables.
+  - El jugador debe balancear con frialdad si necesita oro urgente o si debe limpiar su honor para evitar el desenlace fatal.
+- **Resolución al Concluir la Jornada:**
+  - No hay Día 6. El sistema computa los 3 valores maestros: **Dinero acumulado**, **Nivel de Honor** y **Posesión de Objetos Especiales** en el baúl.
+
+---
+
+## 🏆 Matriz de los 4 Finales (Condiciones de Victoria / Desenlace)
+
+| Final | Título | Condiciones Requeridas | Narrativa y Epílogo |
+| :---: | :--- | :--- | :--- |
+| **1** | **🪦 El Buen Ciudadano Muerto** | - Poco o nada de dinero al final.<br>- Honor Alto ($> +40$). | Fuiste un oficial intachable y ciego a la corrupción del reino. Jamás robaste ni aceptaste sobornos, pero tu sueldo miserable no alcanzó para cubrir la comida ni las medicinas. El protagonista y su familia mueren de inanición en la más absoluta soledad. |
+| **2** | **⛓️ El Corrupto Descubierto** | - Mucho dinero acumulado ($> 500$ monedas).<br>- Honor Muy Bajo ($-100$ a $-50$, alta sospecha). | Acumulaste una fortuna descarada saqueando a los aventureros. El Inspector Real y la guardia del rey asaltan tu casa a medianoche: tus bienes son incautados, tu familia te repudia por la deshonra y pasas el resto de tus días en las mazmorras subterráneas. |
+| **3** | **🍷 El Burócrata Gris (La Burguesía)** | - Mucho dinero acumulado ($> 500$ monedas).<br>- Honor Equilibrado / Neutro (rondando el cero negativo, $-25$ a $+20$). | Supiste cuándo obedecer y cuándo desviar la mirada. Robaste con cautela, mantuviste contento al Guardia Gato y tu expediente oficial permaneció impoluto. Te retiras de la aduana, tu familia vive con comodidades y ascienden como respetables miembros de la nueva burguesía mercantil. |
+| **4** | **👑 El Imperio Familiar (Final Secreto)** | - Haber **Robado y Conservado** el **Libro de Alquimia** (Día 3).<br>- Haber **Robado y Conservado** el **Libro de Carpintería** (Día 4).<br>- Sobrevivir financieramente al gasto en madera del hijo. | Guiado por las pistas del diario familiar, conservaste ambos textos. Gracias al Libro de Carpintería, tu hijo transforma la madera comprada en refinadas esculturas; gracias al Libro de Alquimia, tu hija domina la transmutación y convierte cada pieza en oro purísimo. La familia acumula tal poder financiero que terminan sobornando a los nobles y **comprando el propio Reino de Aldoria**. |
+
+---
+
+## 💀 Condición de Game Over (Fracaso Inmediato)
+- En cualquier momento entre los días 1 y 5, si tras cerrar el balance nocturno el dinero resulta **menor o igual a 0**, el juego concluye de inmediato:
+  - *Pantalla de Quiebra:* La familia es desahuciada por falta de pago y sucumbe al frío y la inanición en las calles del reino.
