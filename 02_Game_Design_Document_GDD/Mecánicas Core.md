@@ -20,7 +20,8 @@
 
 ```mermaid
 flowchart TD
-    A["1. Guardia presenta aventurero y su botín"] --> B["2. Inspeccionar con El Lente<br>(Espectro Mágico, Biológico o Rayos X)"]
+    A["1. Aventurero presenta su item"] -->|Día 2+| B["2. Inspeccionar con El Lente<br>(Espectro Mágico)"]
+    A --> C
     B --> C["3. Consultar Libro de Reglas del Día<br>(Leyes, ilegalidades, confiscaciones)"]
     C --> D["4. Formulario Universal (La Coartada)<br>Definir o alterar: Material, Estado y Propósito"]
     D --> E{"5. Elegir Resolución del Trámite"}
@@ -46,15 +47,13 @@ El jugador interactúa con una mesa llena de herramientas físicas para analizar
 ### 1. 🔍 El Lente (La Verdad)
 - **Función:** Se arrastra físicamente sobre el objeto en la mesa.
 - **Sin texto explicativo:** No proporciona etiquetas ni texto plano; revela **visualmente** propiedades ocultas del objeto según el filtro activo.
-- **3 Filtros / Espectros Conmutables:**
+- **Filtro / Espectro Conmutable:**
   - 🔮 **Espectro Mágico:** Revela runas de encantamiento, auras elementales (fuego, hielo, relámpago) y energía arcana latente.
-  - 🧬 **Espectro Biológico:** Revela residuos orgánicos, toxinas, venenos activos, esporas fúngicas, sangre o parásitos vivos.
-  - 💀 **Espectro de Rayos X:** Revela la estructura interna, compartimentos secretos, densidad ósea, mecanismos ocultos o núcleos metálicos escondidos dentro de materiales inocuos.
 
 ### 2. 📝 El Formulario Universal (La Coartada)
 - **Naturaleza:** Un documento oficial permanente fijado en la mesa de trabajo.
 - **Estructura (3 Menús Desplegables):**
-  1. **Material:** (ej. *Hierro dulce, Madera común, Plata sagrada, Hueso maldito, Cristal arcano...*)
+  1. **Material:** (ej. *Hierro, Madera, Plata, Hueso, Cristal, items a diseñar aún*)
   2. **Estado:** (ej. *Inerte, Consagrado, Infectado, Flamígero, Inestable, Roto...*)
   3. **Propósito:** (ej. *Ornamento doméstico, Utensilio agrícola, Estudio pedagógico, Arma de guerra, Culto prohibido...*)
 - **Mecánica del Vacío Legal:** Se usa para definir legalmente el objeto ante los ojos de la Corona. 
@@ -100,10 +99,11 @@ Al caer la noche, se presenta el balance contable obligatorio:
   - Comisiones por arrestos justificados.
   - Bonos de incautación legal.
   - Ganancias por venta en el mercado negro de objetos robados (si decides venderlos).
+  - Bonus por acabar antes del tiempo limite.
 - **Gastos Obligatorios:**
   - Comida y manutención familiar.
   - Alquiler y gastos imprevistos de la casa.
-  - **🐱 El Soborno al Guardia Gato:** El guardia con armadura está siempre presente en tu mesa. Si usaste la acción *"Robar"* durante el día, él se dio cuenta; la cuota de *"Soborno al Guardia"* **aumenta drásticamente** en el resumen nocturno para comprar su silencio.
+  - **🐱 El Soborno al Guardia:** El guardia con armadura está siempre presente en tu mesa. Si usaste la acción *"Robar"* durante el día, él se dio cuenta; la cuota de *"Soborno al Guardia"* **aumenta drásticamente** en el resumen nocturno para comprar su silencio.
 - **💀 Condición de Game Over Inmediato:**
   - Si en cualquier resumen diario tu dinero llega a **cero o valor negativo**, se produce la derrota inmediata por **inanición y miseria de tu familia**.
 
@@ -111,14 +111,13 @@ Al caer la noche, se presenta el balance contable obligatorio:
 
 ## 🎮 Controles e Interacción (Point & Click / Drag & Drop)
 
-| Acción | Control | Función en Juego |
-| :--- | :--- | :--- |
-| **Arrastrar El Lente** | `Click Izquierdo + Arrastre` | Desplazar la lupa sobre el botín en la mesa de inspección. |
-| **Cambiar Filtro de Lente** | `Rueda del Ratón` / Teclas `1, 2, 3` / Clic en perilla | Conmutar entre Espectro Mágico (1), Biológico (2) y Rayos X (3). |
-| **Configurar Coartada** | `Click Izquierdo` en `OptionButton` | Modificar Material, Estado y Propósito en el Formulario Universal. |
-| **Consultar Libro de Reglas** | `Click` en el libro o Tecla `Espacio` | Abrir / cerrar el compendio de normativas y leyes del día. |
-| **Ejecutar Resolución** | `Click Izquierdo` en botones de acción | Presionar `Cobrar`, `Arrestar`, `Confiscar` o `Robar`. |
-| **Pausa / Ajustes** | `Tecla Escape` | Menú de pausa, reanudación y controles de volumen. |
+| Acción                        | Control                                | Función en Juego                                                   |
+| :---------------------------- | :------------------------------------- | :----------------------------------------------------------------- |
+| **Arrastrar El Lente**        | `Click Izquierdo + Arrastre`           | Desplazar la lupa sobre el botín en la mesa de inspección.         |
+| **Configurar Coartada**       | `Click Izquierdo` en `OptionButton`    | Modificar Material, Estado y Propósito en el Formulario Universal. |
+| **Consultar Libro de Reglas** | `Click` en el libro o Tecla `Espacio`  | Abrir / cerrar el compendio de normativas y leyes del día.         |
+| **Ejecutar Resolución**       | `Click Izquierdo` en botones de acción | Presionar `Cobrar`, `Arrestar`, `Confiscar` o `Robar`.             |
+| **Pausa / Ajustes**           | `Tecla Escape`                         | Menú de pausa, reanudación y controles de volumen.                 |
 
 ---
 

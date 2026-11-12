@@ -8,15 +8,15 @@
 
 ## 👤 Personajes (Sprites Pixel Art)
 
-| Asset | Dimensiones | Animaciones / Estados | Responsable | Estado |
-| :--- | :--- | :--- | :--- | :---: |
-| `char_guardia_gato` | ~80x80 px | Idle con armadura (4f), hablar/murmurar (3f), **Reacción cómplice al robar** (guiño/sonrisa) | Lucas | 🔴 Pendiente |
-| `char_burocrata_manos` | ~64x64 px | Manos del oficial en primera persona (manipular herramientas, sellar, abrir cajón secreto) | Lucas | 🔴 Pendiente |
-| `npc_aventurero_guerrero` | ~64x64 px | Idle nervioso / porte rudo / reacción arresto | Lucas | 🔴 Pendiente |
-| `npc_aventurero_maga` | ~64x64 px | Idle altiva / disimulo arcano | Lucas | 🔴 Pendiente |
-| `npc_aventurero_picaro` | ~64x64 px | Mirada esquiva / pícaro goblin o enano | Lucas | 🔴 Pendiente |
-| `npc_anciano_erudito` | ~64x64 px | Anciano encorvado que porta el Libro de Alquimia (Día 3) | Lucas | 🔴 Pendiente |
-| `npc_artesano_viajero` | ~64x64 px | Carpintero que porta el Libro de Carpintería (Día 4) | Lucas | 🔴 Pendiente |
+| Asset                     | Dimensiones | Animaciones / Estados                                                                        | Responsable |    Estado    |
+| :------------------------ | :---------- | :------------------------------------------------------------------------------------------- | :---------- | :----------: |
+| `char_guardia`            | ~80x80 px   | Idle con armadura (4f), hablar/murmurar (3f), **Reacción cómplice al robar** (guiño/sonrisa) | Lucas       | 🔴 Pendiente |
+| `char_burocrata_manos`    | ~64x64 px   | Manos del oficial en primera persona (manipular herramientas, sellar, abrir cajón secreto)   | Lucas       | 🔴 Pendiente |
+| `npc_aventurero_guerrero` | ~64x64 px   | Idle nervioso / porte rudo / reacción arresto                                                | Lucas       | 🔴 Pendiente |
+| `npc_aventurero_maga`     | ~64x64 px   | Idle altiva / disimulo arcano                                                                | Lucas       | 🔴 Pendiente |
+| `npc_aventurero_picaro`   | ~64x64 px   | Mirada esquiva / pícaro goblin o enano                                                       | Lucas       | 🔴 Pendiente |
+| `npc_anciano_erudito`     | ~64x64 px   | Anciano encorvado que porta el Libro de Alquimia (Día 3)                                     | Lucas       | 🔴 Pendiente |
+| `npc_artesano_viajero`    | ~64x64 px   | Carpintero que porta el Libro de Carpintería (Día 4)                                         | Lucas       | 🔴 Pendiente |
 
 ---
 

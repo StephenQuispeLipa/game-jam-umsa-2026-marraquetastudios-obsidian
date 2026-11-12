@@ -15,20 +15,19 @@
 
 ```text
 +-----------------------------------------------------------------------------------+
-| [Menú / Pausa]                 [Ventanilla: Arco & Aventurero]                    |
+| [MENÚ]                                                    [Reloj Sol/Luna: 04:15] |
 |                                                                                   |
-|                                [Bandeja de Botín]               [Guardia Gato]    |
-|                                (Ítem en Inspección)             (Vigilante)       |
+| [ COBRAR   ]         [Bocadillo Cliente]           [Bocadillo Guardia]            |
+| [ ARRESTAR ]         "Por favor déjeme pasar..."   "Mírala bien..."               |
+| [ CONFISCAR]                  [Aventurera en Ventanilla]    [Guardia Gato]        |
+| [ ROBAR    ]                  (Fila de fondo en arco)       (Armadura & Escudo)   |
 |                                                                                   |
 | -------------------------- MESA DE TRABAJO -------------------------------------- |
 |                                                                                   |
-| [Formulario Universal]          [El Lente]                 [Panel de Trámites]   |
-| • Material [Desplegable]        • 3 Filtros:               • [ 💰 COBRAR   ]     |
-| • Estado   [Desplegable]          1. Mágico (Púrpura)      • [ ⛓️ ARRESTAR ]     |
-| • Propósito[Desplegable]          2. Biológico (Verde)     • [ 📦 CONFISCAR] (D3)|
-|                                   3. Rayos X (Cian/Hueso)  • [ 🤫 ROBAR    ] (D3)|
+|  [Bolsa de Despacho]          [Espada / Botín a Inspeccionar]                     |
 |                                                                                   |
-| [ 📖 Libro de Reglas ]                                                            |
+|  [Declaración Jurada /]       [Manos del Jugador]           [Libro de Reglas      |
+|   Formulario Universal]       [Lente con Dial N/S/E/W]       Abierto con Ilustr.] |
 +-----------------------------------------------------------------------------------+
 | >>> [Bordes de Pantalla: Viñeta Blanca / Roja para Feedback de Honor Oculto] <<<  |
 +-----------------------------------------------------------------------------------+
@@ -36,16 +35,17 @@
 
 | Elemento | Posición en Pantalla | Tipo de Nodo | Función / Comportamiento UX |
 | :--- | :--- | :--- | :--- |
-| **Menú / Pausa** | Superior Izquierda | `TextureButton` | Pausa, reanudación, reinicio de jornada y ajustes de audio. |
-| **Ventanilla / Exterior** | Fondo Superior | `TextureRect` | Marco de piedra medieval con vista a la fila de aventureros en espera. |
-| **Aventurero (Cliente)** | Centro Fondo | `AnimatedSprite2D` | Cliente actual; animaciones de espera, alivio o pánico al ser arrestado. |
-| **Guardia Gato** | Centro-Derecha Media | `AnimatedSprite2D` | Vigila la mesa. Si ejecutas la acción `Robar`, cambia su sprite a una mirada cómplice y socarrona. |
-| **Bandeja de Botín** | Centro de la Mesa | `Area2D` / `Marker2D` | Espacio físico donde descansa el objeto confiscado a inspeccionar. |
-| **El Lente (La Verdad)** | Centro Inferior Mesa | `Area2D` (Draggable) | Lupa con 3 filtros de espectro óptico que se arrastra sobre el botín. |
-| **Selector de Filtro** | Integrado en El Lente | `TextureButton` / Input | Dial giratorio para conmutar entre Espectro Mágico, Biológico y Rayos X. |
-| **Formulario Universal** | Inferior Izquierda Mesa | `Control` (Scroll/Card) | Pergamino con 3 menús `OptionButton` (Material, Estado, Propósito). |
-| **Libro de Reglas** | Esquina Inf. Izquierda | `TextureButton` | Abre en pantalla completa el manual de leyes del día (`Rulebook_Popup.tscn`). |
-| **Botones de Resolución** | Inferior Derecha Mesa | `VBoxContainer` / `Buttons`| Acciones del trámite: `Cobrar`, `Arrestar`, `Confiscar` (D3+) y `Robar` (D3+). |
+| **Botón Menú** | Superior Izquierda | `TextureButton` | Pausa, reanudación, reinicio de jornada y ajustes de audio. |
+| **Reloj de Jornada** | Superior Derecha | `Control` / `Label` | Cuadrante con ciclo visual Sol/Luna y minutero digital (ritmo del turno). |
+| **Botones de Resolución** | Lateral Izquierdo Superior | `VBoxContainer` | Acciones directas apiladas: `Cobrar` (amarillo), `Arrestar` (rojo), `Confiscar` (azul) y `Robar` (pardo). |
+| **Ventanilla / Exterior** | Fondo Centro | `TextureRect` | Arco de piedra medieval con vista a la fila de aventureros en espera y estandartes reales. |
+| **Aventurero (Cliente)** | Centro Ventanilla | `AnimatedSprite2D` | Cliente actual con bocadillo de diálogo dinámico (suplica, excusa o nerviosismo). |
+| **Guardia Gato** | Derecha Ventanilla | `AnimatedSprite2D` | Centinela con armadura y escudo dorado; emite comentarios de sospecha y guiños cómplices. |
+| **Bolsa de Despacho** | Centro-Izquierda Mesa | `Area2D` / `Sprite2D` | Bolsa de cuero donde se deposita o retira el botín. |
+| **Bandeja / Zona Central** | Centro de la Mesa | `Marker2D` / `Area2D` | Espacio físico donde descansa el objeto a inspeccionar (ej. espada, reliquias). |
+| **El Lente (La Verdad)** | Centro Inferior Mesa | `Area2D` (Draggable) | Lupa con dial direccional (N/S/E/W) sostenida por las manos en primera persona. |
+| **Formulario Universal** | Inferior Izquierda Mesa | `Control` (Scroll/Card) | Pergamino con menús desplegables para asentar la coartada oficial. |
+| **Libro de Reglas** | Inferior Derecha Mesa | `TextureButton` / `Control`| Tomo abierto de páginas gruesas con las normativas e ilustraciones del día. |
 | **Viñeta de Honor** | Pantalla completa (CanvasLayer)| `ColorRect` con Shader | Flash sutil de viñeta blanca (honor positivo) o roja (honor negativo). |
 
 ---

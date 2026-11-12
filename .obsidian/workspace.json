@@ -11,14 +11,16 @@
             "id": "1e78cdb633074a06",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "04_Audio/Lista de SFX.md",
-                "mode": "source",
-                "source": false
+                "file": "01_Planificacion_y_Tareas/Kanban.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": []
+                }
               },
-              "icon": "lucide-file",
-              "title": "Lista de SFX"
+              "icon": "lucide-trello",
+              "title": "Kanban"
             }
           }
         ]
@@ -202,24 +204,26 @@
   },
   "active": "1e78cdb633074a06",
   "lastOpenFiles": [
+    "05_Programacion/Convenciones.md",
+    "05_Programacion/Bugs y Fixes.md",
+    "04_Audio/Referencias Musicales.md",
+    "04_Audio/Lista de SFX.md",
     "03_Arte_y_UI/Moodboard.md",
     "03_Arte_y_UI/Lista de Assets Visuales.md",
     "03_Arte_y_UI/Diseño de Interfaz.md",
-    "00_Inicio/Reglas y Entregables.md",
-    "01_Planificacion_y_Tareas/Kanban.md",
+    "02_Game_Design_Document_GDD/Mecánicas Core.md",
     "01_Planificacion_y_Tareas/Cronograma.md",
-    "05_Programacion/Bugs y Fixes.md",
-    "05_Programacion/Convenciones.md",
+    "02_Game_Design_Document_GDD/Diseño de Niveles.md",
+    "02_Game_Design_Document_GDD/Historia y Personajes.md",
+    "00_Inicio/Reglas y Entregables.md",
+    "00_Inicio/Dashboard.md",
+    "01_Planificacion_y_Tareas/Kanban.md",
     "05_Programacion/Flujo de Git.md",
     "03_Arte_y_UI/adjuntos/mockup_mesa_juego.jpg",
     "03_Arte_y_UI/adjuntos",
     "05_Programacion/adjuntos/git-workflow.png",
     "05_Programacion/adjuntos",
-    "00_Inicio/Dashboard.md",
-    "02_Game_Design_Document_GDD/Diseño de Niveles.md",
     "canva_raw.html",
-    "02_Game_Design_Document_GDD/Mecánicas Core.md",
-    "02_Game_Design_Document_GDD/Historia y Personajes.md",
     "README.md",
     "99_Plantillas/Plantilla - Reporte de Bug.md",
     "99_Plantillas/Plantilla - Nuevo Personaje.md",
@@ -228,8 +232,6 @@
     "06_Brainstorming_y_Notas/Ideas y Notas de Reunión.md",
     "06_Brainstorming_y_Notas",
     "05_Programacion",
-    "04_Audio/Lista de SFX.md",
-    "04_Audio/Referencias Musicales.md",
     "04_Audio",
     "03_Arte_y_UI",
     "02_Game_Design_Document_GDD",
